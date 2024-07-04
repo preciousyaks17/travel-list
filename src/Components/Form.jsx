@@ -11,8 +11,9 @@ export default function Form({ onAddItems }) {
     setDescription("");
     setQuantity(1);
   }
-
+  //the form has the job of collecting the data from the user and passing it to the parent component and the parent component will then pass it to the child component to display it on the screen
   return (
+    //the form has a select input for the quantity of the item, an input for the description of the item and a button to submit the form
     <form className="add-form" onSubmit={handleSubmit}>
       <h3>What do you need for your trip?</h3>
 
@@ -26,6 +27,7 @@ export default function Form({ onAddItems }) {
           </option>
         ))}
       </select>
+
       <input
         type="text"
         placeholder="Item..."
